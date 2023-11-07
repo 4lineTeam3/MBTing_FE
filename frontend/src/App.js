@@ -15,6 +15,7 @@ import PageINTJ from "./pages/MBTI/pageINTJ";
 import PageISTJ from "./pages/MBTI/pageISTJ"; 
 import PageISFP from "./pages/MBTI/pageISFP"; 
 import PageINFJ from "./pages/MBTI/pageINFJ"; 
+import PageISFJ from "./pages/MBTI/pageISFJ"; 
 import React,{useEffect, useState}  from 'react';
 import './style/App.css'; 
 
@@ -46,6 +47,7 @@ function App() {
         <Route path="/istj" element={<PageISTJ />} /> 
         <Route path="/isfp" element={<PageISFP />} /> 
         <Route path="/infj" element={<PageINFJ />} /> 
+        <Route path="/isfj" element={<PageISFJ />} /> 
       </Routes>
     </BrowserRouter>
   );
