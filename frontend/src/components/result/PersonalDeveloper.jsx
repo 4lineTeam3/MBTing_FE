@@ -1,9 +1,8 @@
 import React from 'react';
 import Developerlmg from '../result/DeveloperImg'; 
-import SmallINFJ from '../../img/MBTI/INFJsmall.png'; 
-import SmallINTJ from '../../img/MBTI/INTJsmall.png'; 
 
-function PersonalDeveloper(){ 
+function PersonalDeveloper(props){ 
+    const { img1, img2 } = props; 
     const pdStyle = { 
         marginLeft:"7%", 
         marginRight:"7%"
@@ -32,8 +31,8 @@ function PersonalDeveloper(){
         <div style={pdStyle}>
              <div style={pdText}>당신과 어울리는 개발자 유형</div>
              <div style={pdLanguage}>
-                <Developerlmg image={SmallINFJ}/>
-                <Developerlmg image={SmallINTJ}/>
+                <Developerlmg image={img1}/>
+                <Developerlmg image={img2}/>
             </div>
         </div>
     ); 

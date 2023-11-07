@@ -2,7 +2,8 @@ import React from 'react';
 import PersonalLangauage from '../result/PersonalLanguage';
 import PersonalDeveloper from '../result/PersonalDeveloper'; 
 
-function FriendResult(){ 
+function FriendResult(props){ 
+    const { language, developerImg1, developerImg2 } = props;
     const friendBack = { 
         width: '21.875rem', 
         height: '8.1875rem', 
@@ -27,9 +28,9 @@ function FriendResult(){
 
     return(
         <div style={friendBack}>
-            <PersonalLangauage language={"swift"}/>
+            <PersonalLangauage language={language}/>
             <div style={line}/>
-            <PersonalDeveloper/>
+            <PersonalDeveloper img1={developerImg1} img2={developerImg2}/>
         </div>
     ); 
 }

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Result from "./pages/Result"; 
 import PageENTP from "./pages/MBTI/PageENTP"; 
+import PageENFP from "./pages/MBTI/pageENFP"; 
 import React,{useEffect, useState}  from 'react';
 import './style/App.css'; 
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/result" element={<Result />} /> 
         <Route path="/entp" element={<PageENTP />} /> 
+        <Route path="/enfp" element={<PageENFP />} /> 
       </Routes>
     </BrowserRouter>
   );

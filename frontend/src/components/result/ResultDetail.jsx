@@ -8,7 +8,9 @@ function ResultExplain(props) {
         fontSize: '1.125rem',
         fontStyle: 'normal',
         fontWeight: '300',
-        lineHeight: '1.875rem'
+        lineHeight: '1.875rem', 
+        display: 'flex', 
+        justifyContent: 'center'
     };
 
     return (
