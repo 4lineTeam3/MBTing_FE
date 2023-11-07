@@ -12,10 +12,13 @@ function ResultExplain(props) {
         display: 'flex', 
         justifyContent: 'center'
     };
+    const ul = {
+        margin:'0.5rem'
+    };
 
     return (
         <div style={backgroundStyle}>
-            <ul>
+            <ul style={ul}>
                 <li>{detail1}</li>
                 <li>{detail2}</li>
                 <li>{detail3}</li>

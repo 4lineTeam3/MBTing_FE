@@ -2,7 +2,6 @@ import React from 'react';
 import resultBack from '../../img/resultBack.png'; 
 import ResultTitle from '../../components/result/ResultTitle';
 import ResultImg from '../../components/result/ResultImg'; 
-import ENTP from "../../img/MBTI/ENTP.png"; 
 import ENFP from "../../img/MBTI/ENFP.png"; 
 import ResultName from "../../components/result/ResultName"; 
 import ResultExplain from "../../components/result/ResultExplain"; 

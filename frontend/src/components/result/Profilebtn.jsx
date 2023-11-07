@@ -20,7 +20,7 @@ function Profilebtn(){
         fontWeight: '700', 
         lineHeight: 'normal', 
         display: 'inline-block', 
-        marginTop:"5%"
+        marginTop:"4%"
     };
 
     return(

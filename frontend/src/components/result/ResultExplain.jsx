@@ -21,12 +21,16 @@ function ResultExplain(props) {
         fontStyle: 'normal', 
         fontWeight: 'bold', 
         lineHeight: '1.875rem', 
-        marginTop: "5%"
+        marginTop: "3%"
+    }
+    const subStyle = { 
+        marginLeft:'3%', 
+        marginRight:'3%'
     }
 
     return (
         <div style={explainStyle}>
-            <div>{explain}<span style={nameStyle}>{name}</span>{feel}</div>
+            <div style={subStyle}>{explain}<span style={nameStyle}>{name}</span>{feel}</div>
         </div>
     ); 
 }
