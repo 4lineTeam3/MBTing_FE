@@ -10,6 +10,7 @@ import PageENFJ from "./pages/MBTI/pageENFJ";
 import PageESFJ from "./pages/MBTI/pageESFJ"; 
 import PageINTP from "./pages/MBTI/pageINTP"; 
 import PageINFP from "./pages/MBTI/pageINFP"; 
+import PageISTP from "./pages/MBTI/pageISTP"; 
 import React,{useEffect, useState}  from 'react';
 import './style/App.css'; 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/esfj" element={<PageESFJ />} /> 
         <Route path="/intp" element={<PageINTP />} /> 
         <Route path="/infp" element={<PageINFP />} /> 
+        <Route path="/istp" element={<PageISTP />} /> 
       </Routes>
     </BrowserRouter>
   );
