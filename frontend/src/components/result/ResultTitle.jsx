@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function ResultTitle(){ 
     const titleStyle= { 
         color: "#000",
@@ -11,8 +10,8 @@ function ResultTitle(){
         fontWeight: "700", 
         lineHeight: "normal", 
         paddingTop:"25%", 
-        marginLeft:"17%", 
-        marginRight:"17%"
+        marginLeft:"16%", 
+        marginRight:"16%"
     }; 
 
     return(

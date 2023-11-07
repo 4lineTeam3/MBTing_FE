@@ -1,15 +1,15 @@
 import React from 'react';
-import resultBack from '../img/resultBack.png'; 
-import ResultTitle from '../components/result/ResultTitle';
-import ResultImg from '../components/result/ResultImg'; 
-import ENTP from "../img/MBTI/ENTP.png"; 
-import ResultName from "../components/result/ResultName"; 
-import ResultExplain from "../components/result/ResultExplain"; 
-import ResultDetail from "../components/result/ResultDetail";
-import Profilebtn from "../components/result/Profilebtn"; 
-import FriendResult from "../components/result/FriendResult";
+import resultBack from '../../img/resultBack.png'; 
+import ResultTitle from '../../components/result/ResultTitle';
+import ResultImg from '../../components/result/ResultImg'; 
+import ENTP from "../../img/MBTI/ENTP.png"; 
+import ResultName from "../../components/result/ResultName"; 
+import ResultExplain from "../../components/result/ResultExplain"; 
+import ResultDetail from "../../components/result/ResultDetail";
+import Profilebtn from "../../components/result/Profilebtn"; 
+import FriendResult from "../../components/result/FriendResult";
 
-function Result(){ 
+function PageENTP(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
         backgroundSize: 'cover',
@@ -41,4 +41,4 @@ function Result(){
     ); 
 }
 
-export default Result; 
+export default PageENTP; 
