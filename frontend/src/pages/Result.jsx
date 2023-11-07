@@ -1,7 +1,7 @@
 import React from 'react';
 import resultBack from '../img/resultBack.png'; 
-
-import La from '../components/la';
+import ResultTitle from '../components/ResultTitle';
+import ResultImg from '../components/ResultImg'; 
 
 function Result(){ 
     const backgroundStyle = {
@@ -13,7 +13,8 @@ function Result(){
 
     return(
         <div style={backgroundStyle}>
-            <La/>
+            <ResultTitle/>
+            <ResultImg/>
         </div>
     ); 
 }

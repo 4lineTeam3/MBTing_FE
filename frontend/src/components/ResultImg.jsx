@@ -1,11 +1,12 @@
 import React from 'react';
 
-function la(){ 
+function ResultImg(){ 
+
     return(
         <div>
-            fsdkfhds fdf
+           
         </div>
     ); 
 }
 
-export default la; 
+export default ResultImg; 
