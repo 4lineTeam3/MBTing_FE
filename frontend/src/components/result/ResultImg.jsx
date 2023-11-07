@@ -6,7 +6,7 @@ function ResultImg(img){
         height: 'auto', 
         display: 'flex',
         justifyContent: 'center', 
-        marginTop:'5%'
+        marginTop:'3%'
     };
 
     return(

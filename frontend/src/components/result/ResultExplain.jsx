@@ -11,7 +11,7 @@ function ResultExplain(props) {
         fontStyle: 'normal', 
         fontWeight: '300', 
         lineHeight: '1.875rem', 
-        marginTop: "5%"
+        marginTop: "3%"
     };
     const nameStyle = { 
         color: '#000', 

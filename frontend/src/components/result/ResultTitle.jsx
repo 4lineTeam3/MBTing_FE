@@ -9,7 +9,7 @@ function ResultTitle(){
         fontStyle: "normal", 
         fontWeight: "700", 
         lineHeight: "normal", 
-        paddingTop:"25%", 
+        paddingTop:"20%", 
         marginLeft:"16%", 
         marginRight:"16%"
     }; 
