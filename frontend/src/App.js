@@ -5,6 +5,7 @@ import PageENFP from "./pages/MBTI/pageENFP";
 import PageESTP from "./pages/MBTI/pageESTP"; 
 import PageENTJ from "./pages/MBTI/pageENTJ"; 
 import PageESTJ from "./pages/MBTI/pageESTJ"; 
+import PageESFP from "./pages/MBTI/pageESFP"; 
 import React,{useEffect, useState}  from 'react';
 import './style/App.css'; 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/estp" element={<PageESTP />} /> 
         <Route path="/entj" element={<PageENTJ />} /> 
         <Route path="/estj" element={<PageESTJ />} /> 
+        <Route path="/esfp" element={<PageESFP />} /> 
       </Routes>
     </BrowserRouter>
   );
