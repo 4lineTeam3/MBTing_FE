@@ -25,20 +25,14 @@ function Answer1(){
         lineHeight: "normal",
     };
 
-    // 줄바꿈 문자를 <br />로 변환
-    const renderAnswer = (text) => {
-        const parts = text.split('\n');
-        return parts.map((part, index) => (
-            <React.Fragment key={index}>
-                {part}
-                <br />
-            </React.Fragment>
-        ));
+    const renderAnswer = () => {
+        const parts = ans1.split('\n');
+        return(parts);
     }
 
     return(
-        <div style={answerStyle}>
-            {renderAnswer(ans1)}
+        <div style={answerStyle} >
+            {renderAnswer()}
         </div>
     ); 
 }

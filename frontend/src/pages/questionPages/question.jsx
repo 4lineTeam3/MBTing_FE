@@ -18,20 +18,14 @@ function Question(){
 
     }; 
 
-    // 줄바꿈 문자를 <br />로 변환
-    const renderQuestion = (text) => {
-        const parts = text.split('\n');
-        return parts.map((part, index) => (
-            <React.Fragment key={index}>
-                {part}
-                <br />
-            </React.Fragment>
-        ));
+    const renderQuestion = () => {
+        const parts = question.split('\n');
+        return(parts);
     }
 
     return(
         <div style={questionStyle}>
-            {renderQuestion(question)}
+            {renderQuestion()}
         </div>
     ); 
 }

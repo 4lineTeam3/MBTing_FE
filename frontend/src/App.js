@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import QuestionMain from "./pages/questionPages/questionMain"; 
 import React,{useEffect, useState}  from 'react';
 import '../src/App.css'; 
+import MatchingMain from './pages/matchingPages/matchingMain';
+import MorePage from './pages/matchingPages/morePage';
 
 function App() {
   function setScreenSize() {
@@ -15,7 +17,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Question" element={<QuestionMain/>} /> 
+      <Route path="/Question" element={<QuestionMain/>} /> 
+      <Route path="/Matching" element={<MatchingMain/>} /> 
+      <Route path="/More" element={<MorePage/>} /> 
       </Routes>
     </BrowserRouter>
   );

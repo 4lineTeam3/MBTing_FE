@@ -25,20 +25,21 @@ function Answer2(){
         lineHeight: "normal",
     };
 
-    const renderAnswer = (text) => {
-        const parts = text.split('\n');
-        return parts.map((part, index) => (
-            <React.Fragment key={index}>
-                {part}
-                <br />
-            </React.Fragment>
-        ));
+    const renderAnswer = () => {
+        const parts = ans2.split('\n');
+        return (parts
+        //parts.map((part, index) => (
+        //     <React.Fragment key={index}>
+        //         {part}
+        //         <br />
+        //     </React.Fragment>
+        );
     }
 
 
     return(
         <div style={answerStyle} >
-            {renderAnswer(ans2)}
+            {renderAnswer()}
         </div>
     ); 
 }
