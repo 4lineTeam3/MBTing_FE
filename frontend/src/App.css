@@ -13,6 +13,14 @@
   }
 }
 
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +43,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --vh: 100%;
 }
