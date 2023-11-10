@@ -1,7 +1,16 @@
 
 import questionBack from '../../img/questionBack.png'
-import PictureContainer from './pictureContainer';
 import MatchingHeader from './matchinHeader';
+import PersonContainer4 from './personContainer4'
+import PersonContainer5 from './personContainer5';
+import PersonContainer6 from './personContainer6';
+import PersonContainer7 from './personContainer7';
+import PersonContainer8 from './personContainer8';
+import PersonContainer9 from './personContainer9';
+import PersonContainer10 from './personContainer10';
+import PersonContainer11 from './personContainer11';
+import PersonContainer12 from './personContainer12';
+
 
 function MorePage(){
     const backgroundStyle = {
@@ -12,7 +21,7 @@ function MorePage(){
         width: '100vw',
         objectFit: 'cover',
         fontFamily: "GmarketSansMedium",
-        height: 'auto'
+        height: '100vh'
     };
 
     const lineContainer={
@@ -42,44 +51,27 @@ function MorePage(){
             <MatchingHeader/>
 
             <div>
-            <div style={titleStyle}>차은주 선생님</div> 
+            <div style={titleStyle}>흰둥이</div> 
             </div>
 
             <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
+            <PersonContainer4/>
+            <PersonContainer5/>
+            <PersonContainer6/>
             </div>
 
             <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
+            <PersonContainer7/>
+            <PersonContainer8/>
+            <PersonContainer9/>
             </div>
 
             <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
+            <PersonContainer10/>
+            <PersonContainer11/>
+            <PersonContainer12/>
             </div>
 
-            <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
-            </div>
-
-            <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
-            </div>
-
-            <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
-            </div>
 
         </div>
     ); 

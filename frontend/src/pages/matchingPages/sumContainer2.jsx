@@ -1,12 +1,8 @@
 
 import { Link } from 'react-router-dom';
-import PersonContainer9 from './personContainer9';
-import PersonContainer8 from './personContainer8';
-import PersonContainer7 from './personContainer7';
-import PersonContainer4 from './personContainer4';
-import PersonContainer5 from './personContainer5';
-import PersonContainer6 from './personContainer6';
-
+import PersonContainer from './personContainer';
+import PersonContainer2 from './personContainer2';
+import PersonContainer3 from './personContainer3';
 function sumContainer(){
     const lineContainer={
         display:"flex",
@@ -59,20 +55,18 @@ function sumContainer(){
     return(
     <div style={containerStyle}>
         <div style={title}>
-            <div style={titleStyle}>흰둥이</div>
+            <div style={titleStyle}>훈이</div>
             <Link to="/More"><button style={buttonStyle}>more ></button></Link>
         </div>
 
         <div style={lineContainer}>
-            <PersonContainer4/>
-            <PersonContainer5/>
-            <PersonContainer6/>
+            <PersonContainer/>
+            <PersonContainer2/>
+            <PersonContainer3/>
         </div>
 
         <div style={lineContainer}>
-            <PersonContainer7/>
-            <PersonContainer8/>
-            <PersonContainer9/>
+            
         </div>
 
         

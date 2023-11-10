@@ -1,4 +1,4 @@
-import picture from '../../img/userPic/human1.png';
+import picture from '../../img/userPic/teamp6.png';
 
 function personContainer(){
 
@@ -14,7 +14,6 @@ function personContainer(){
             background: "#FFF",
             boxShadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.25)",
             paddingTop:"0.3rem"
-
         }
     
         const imgStyle={
@@ -71,8 +70,8 @@ function personContainer(){
                 <div style={explain}>
             
             <div style={line1}>
-                #<span id="pName">민서</span>
-                #<span id="pAge">21세</span>
+                #<span id="pName">최용석</span>
+                #<span id="pAge">26세</span>
             </div>
 
             <div style={line2}>
