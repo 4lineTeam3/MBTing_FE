@@ -6,6 +6,7 @@ import JoinEmailInput from '../../components/join/JoinEmailInput';
 import JoinPwInput from "../../components/join/JoinPwInput"; 
 import NickName from "../../components/join/NickNameInput"; 
 import JoinTel from "../../components/join/JoinTel"; 
+import JoinButton from "../../components/join/joinButton"
 
 function PageJoin(){ 
     const joinStyle = {
@@ -26,6 +27,7 @@ function PageJoin(){
             <JoinPwInput/>
             <NickName/>
             <JoinTel/>
+            <JoinButton/>
         </div>
     ); 
 }
