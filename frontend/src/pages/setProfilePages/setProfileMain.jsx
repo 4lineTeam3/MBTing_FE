@@ -11,45 +11,32 @@ import Add from './add';
 import OpenChat from './openChat';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Api from '../../api';
 
-function setProfileMain(){
+function SetProfileMain(){
 
-    const handleButtonClick = () => {
-        // 사용자가 입력한 닉네임 가져오기
-        
-        const nickname = document.getElementById('nickname').value;
-        //이미지
-        //개발파트, 개발영역
-        const spec =document.getElementById('spec').value;//스펙
-        const link = document.getElementById('chatting').value; //오픈채팅 링크
-        
+    const [nickname, setNickname] = useState(''); 
 
-        // PATCH 요청 보내기
-        axios.patch('/update_profile/<int:pk>', {
-        "nickname": nickname,
-        "age": null,
-        "profile_picture": null,
-        "frontEnd": null,
-        "backEnd": null,
-        "uiux": null,
-        "mobile": null,
-        "web": null,
-        "android": null,
-        "ios": null,
-        "mbti": null,
-        "spec1": null,
-        "spec2": null,
-        "spec3": null,
-        "spec4": null,
+    const handleNicknameChange = (newNickname) => {
+        setNickname(newNickname);
+    }; //닉네임 설정
 
-        })
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(nickname);
+
+        Api.patch('update_profile/<int:pk>', {
+            "nickname" : nickname,
+
+        }, { withCredentials: true })
         .then(response => {
             console.log('서버 응답:', response.data);
         })
         .catch(error => {
             console.error('에러 발생:', error);
         });
-    };
+    }
 
     const backgroundStyle = {
         backgroundImage: `url(${background})`,
@@ -77,7 +64,7 @@ function setProfileMain(){
         borderRadius: "0.3125rem",
         borderColor:"#43AA70",
         background: "linear-gradient(266deg, #43AA70 -2.67%, #3C9764 100%)",
-        boxShadow: "none" /* 그림자 비활성화 */,
+        boxShadow: "none",
         marginBottom:"5rem"
     }
 
@@ -87,15 +74,15 @@ function setProfileMain(){
             <SetProfileHeader/>
             <ProfileText/>
             <ModifyPic/>
-            <PutUserName/>
+            <PutUserName onNicknameChange={handleNicknameChange} />
             <PutUserAge/>
             <DevPart/>
             <HopePart/>
             <Add/>
             <OpenChat/>
-            <Link to='/Matching'><button style={btnStyle} onClick={handleButtonClick}>프로필 보러 가기</button></Link>
+            <Link to='/Matching'><button style={btnStyle} onClick={handleSubmit}>프로필 보러 가기</button></Link>
         </div>
     ); 
 }
 
-export default setProfileMain;
+export default SetProfileMain;

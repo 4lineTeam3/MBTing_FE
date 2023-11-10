@@ -8,4 +8,12 @@ module.exports = function(app) {
             changeOrigin: true,
         })
     );
+
+    app.use(
+        '/update_profile/',
+        createProxyMiddleware({
+            target: 'http://223.194.131.109:8000',
+            changeOrigin: true,
+        })
+    );
 };

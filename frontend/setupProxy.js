@@ -19,4 +19,12 @@ module.exports = function(app) {
             changeOrigin: true,
         })
     );
+
+    app.use(
+        '/update_profile/',
+        createProxyMiddleware({
+            target: 'http://192.168.0.41:8000',
+            changeOrigin: true,
+        })
+    );
 };
