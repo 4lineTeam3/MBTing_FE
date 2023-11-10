@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import Api from "../../api/index";
 import axios from 'axios';
 
 function LoginInput(){ 
@@ -14,7 +15,7 @@ function LoginInput(){
     const [data, setData] = useState('')
 
     useEffect(() => {
-        axios.get('http://223.194.131.109:8000/auth/')
+        axios.get('http://223.194.131.109/auth/')
             .then(response => setData(response.data))
             .catch(error => console.log(error))
     }, []);
@@ -23,7 +24,7 @@ function LoginInput(){
         e.preventDefault();
 
         
-        axios.post('/auth/', {
+        Api.post('/auth/', {
             "email" : email,
             "password": password
         })
