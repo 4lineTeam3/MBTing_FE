@@ -1,6 +1,6 @@
-import icon from '../../img/PersonIcon.png'
+import icon from '../../img/backArrow.png'
 
-function MatchingHeader() {
+function setProfileHeader() {
     const backgroundStyle = {
         justifyContent:"center",
         alignItems:"center",
@@ -33,14 +33,15 @@ function MatchingHeader() {
     const iconStyle = {
         display:"relative",
         position:"absolute",
-        right:"1.5rem",
+        left:"0.94rem",
+        top: "1.5rem",
         width: "1.875rem",
         height: "1.875rem"
     };
 
     return (
     <div style={backgroundStyle}>
-        <div style={iconStyle}><img src={icon} alt="뒤로가기" /></div>
+        <div style={iconStyle}><img src={icon} alt="" /></div>
         <div style={logoStyle}>
             MBTing-<span style={heartStyle}>❥</span>
         </div>
@@ -48,4 +49,4 @@ function MatchingHeader() {
     );
 }
 
-export default MatchingHeader;
+export default setProfileHeader;

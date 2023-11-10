@@ -4,6 +4,7 @@ import React,{useEffect, useState}  from 'react';
 import '../src/App.css'; 
 import MatchingMain from './pages/matchingPages/matchingMain';
 import MorePage from './pages/matchingPages/morePage';
+import SetProfile from './pages/setProfilePages/setProfileMain';
 
 function App() {
   function setScreenSize() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/Question" element={<QuestionMain/>} /> 
       <Route path="/Matching" element={<MatchingMain/>} /> 
       <Route path="/More" element={<MorePage/>} /> 
+      <Route path="/SetProfile" element={<SetProfile/>} />
       </Routes>
     </BrowserRouter>
   );

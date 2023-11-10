@@ -18,7 +18,7 @@ function Answer1(){
         textAlign: "center",
         color: "#000",
         textAlign: "center",
-        fontFamily: 'Gmarket Sans TTF',
+        fontFamily: 'GmarketSansMedium',
         fontSize: "1.25rem",
         fontStyle: "normal",
         fontWeight: "500",

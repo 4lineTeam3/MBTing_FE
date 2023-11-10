@@ -9,7 +9,7 @@ function Question(){
     const questionStyle= { 
         color: "#00451E",
         textAlign: "center", 
-        fontFamily: 'Gmarket Sans TTF',
+        fontFamily: 'GmarketSansMedium',
         fontSize:" 1.875rem", 
         fontStyle: "normal",
         fontWeight: "800",

@@ -11,7 +11,7 @@ function MatchingMain(){
         backgroundPosition: 'center center',
         width: '100vw',
         objectFit: 'cover',
-        height: 'auto'
+        height: '100vh'
     };
 
 

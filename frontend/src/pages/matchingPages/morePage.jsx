@@ -11,6 +11,7 @@ function MorePage(){
         backgroundPosition: 'center center',
         width: '100vw',
         objectFit: 'cover',
+        fontFamily: "GmarketSansMedium",
         height: 'auto'
     };
 
@@ -27,7 +28,6 @@ function MorePage(){
         display:"flex",
         marginLeft:"1.44rem",
         color: "#000",
-        fontFamily: "Gmarket Sans TTF",
         fontSize: "1.4375rem",
         fontStyle: "normal",
         fontWeight: "500",

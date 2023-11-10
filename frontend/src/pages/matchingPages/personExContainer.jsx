@@ -18,7 +18,7 @@ function personExContiner(){
         marginLeft:"0.44rem",
         display: "flex",
         color: "#000",
-        fontfamily: "Gmarket Sans TTF",
+        fontfamily: "GmarketSansMedium",
         fontSize: "0.5rem",
         fontStyle: "normal",
         fontWeight: "500",
@@ -27,9 +27,8 @@ function personExContiner(){
 
     const line2={
         marginLeft:"0.44rem",
-        display: "flex",
         color: "#000",
-        fontfamily: "Gmarket Sans TTF",
+        fontfamily: "GmarketSansMedium",
         fontSize: "0.5rem",
         fontStyle: "normal",
         fontWeight: "500",
