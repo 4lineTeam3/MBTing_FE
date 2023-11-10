@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+
 
 function Add() {
   const [specs, setSpecs] = useState(['']); // 초기에 하나의 입력란을 가진 배열
@@ -74,6 +76,7 @@ function Add() {
       {specs.map((spec, index) => (
         <div key={index}>
           <input
+            id="spec"
             type="name"
             placeholder="관심사와 능력을 보여줄 수 있는 스펙을 입력하세요"
             style={inputStyle}

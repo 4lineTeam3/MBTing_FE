@@ -10,7 +10,7 @@ return (
 };
 
 const customIndicatorSeparator = () => {
-  return null;
+    return null;
 };
 
 const customStyles = {
@@ -74,6 +74,7 @@ options.push({ value: 'default', label: '출생년도를 입력하세요', isDis
 for (let year = 2020; year >= 1950; year--) {
     options.push({ value: year, label: `${year}년` });
 }
+
 
 return (
     <div>

@@ -3,6 +3,7 @@ import questionBack from '../../img/questionBack.png';
 import QuestionNumber from '../questionPages/questionNumber';
 import Question from '../questionPages/question';
 import AnswerContainer from '../questionPages/answerContainer';
+import axios from 'axios';
 
 function QuestionMain() {
 const backgroundStyle = {
@@ -53,8 +54,19 @@ const handleNextQuestion = (option, type) => {
 
     setFinalResult(resultString);
 
-    console.log('MBTI Results:', mbtiResults);
+
     console.log('Final Result:', resultString);
+    
+    axios.post('https://',{
+        resultString:resultString,
+    })
+    .then ((response) => {
+        
+    })
+    .catch((error) => {
+        console.error('error')
+    })
+
     }
 };
 

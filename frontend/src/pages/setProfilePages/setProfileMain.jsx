@@ -10,8 +10,47 @@ import HopePart from './hopePart';
 import Add from './add';
 import OpenChat from './openChat';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function setProfileMain(){
+
+    const handleButtonClick = () => {
+        // 사용자가 입력한 닉네임 가져오기
+        
+        const nickname = document.getElementById('nickname').value;
+        //이미지
+        //개발파트, 개발영역
+        const spec =document.getElementById('spec').value;//스펙
+        const link = document.getElementById('chatting').value; //오픈채팅 링크
+        
+
+        // PATCH 요청 보내기
+        axios.patch('/update_profile/<int:pk>', {
+        "nickname": nickname,
+        "age": null,
+        "profile_picture": null,
+        "frontEnd": null,
+        "backEnd": null,
+        "uiux": null,
+        "mobile": null,
+        "web": null,
+        "android": null,
+        "ios": null,
+        "mbti": null,
+        "spec1": null,
+        "spec2": null,
+        "spec3": null,
+        "spec4": null,
+
+        })
+        .then(response => {
+            console.log('서버 응답:', response.data);
+        })
+        .catch(error => {
+            console.error('에러 발생:', error);
+        });
+    };
+
     const backgroundStyle = {
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
@@ -54,7 +93,7 @@ function setProfileMain(){
             <HopePart/>
             <Add/>
             <OpenChat/>
-            <Link to='/Matching'><button style={btnStyle}>프로필 보러 가기</button></Link>
+            <Link to='/Matching'><button style={btnStyle} onClick={handleButtonClick}>프로필 보러 가기</button></Link>
         </div>
     ); 
 }

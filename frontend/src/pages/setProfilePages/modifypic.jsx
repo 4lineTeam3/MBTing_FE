@@ -28,7 +28,9 @@ const Modifypic = () => {
     marginLeft: '9.06rem',
     marginTop: '1.25rem',
     cursor: 'pointer',
-    objectFit: 'cover'
+    borderRadius:'50%',
+    backgroundSize: 'cover',
+    backgroundPosition:'center'
   };
 
   const iconStyle = {
@@ -45,7 +47,7 @@ const Modifypic = () => {
   return (
     <div style={containerStyle}>
       <label>
-        <input type="file" style={{ display: 'none' }} onChange={handleProfileImageChange} accept="image/*" />
+        <input id="userimg" type="file" style={{ display: 'none' }} onChange={handleProfileImageChange} accept="image/*" />
         <div style={profilesetStyle}></div>
       </label>
       <div style={iconStyle}></div>

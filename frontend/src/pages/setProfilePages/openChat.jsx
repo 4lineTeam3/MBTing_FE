@@ -35,7 +35,7 @@ function openChat(){
     return(
         <div>
             <div style={titleStyle}>카카오 오픈채팅 링크</div>
-            <input type="name" placeholder="연락을 받기 위한 오픈채팅 링크를 입력해주세요." style={inputStyle}/>
+            <input id="chatting" type="name" placeholder="연락을 받기 위한 오픈채팅 링크를 입력해주세요." style={inputStyle}/>
         </div>
     );
 }
