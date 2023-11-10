@@ -16,7 +16,10 @@ import PageISTJ from "./pages/MBTI/pageISTJ";
 import PageISFP from "./pages/MBTI/pageISFP"; 
 import PageINFJ from "./pages/MBTI/pageINFJ"; 
 import PageISFJ from "./pages/MBTI/pageISFJ"; 
-import React,{useEffect, useState}  from 'react';
+import PageLogin from "./pages/Login/pageLogin"; 
+import PwReset from "./pages/Login/pwReset"; 
+import PageJoin from "./pages/Join/PageJoin"; 
+import React,{useEffect}  from 'react';
 import './style/App.css'; 
 
 function App() {
@@ -48,6 +51,9 @@ function App() {
         <Route path="/isfp" element={<PageISFP />} /> 
         <Route path="/infj" element={<PageINFJ />} /> 
         <Route path="/isfj" element={<PageISFJ />} /> 
+        <Route path="/auth/" element={<PageLogin />} /> 
+        <Route path="/pwReset" element={<PwReset />} /> 
+        <Route path="/register/" element={<PageJoin />} /> 
       </Routes>
     </BrowserRouter>
   );
