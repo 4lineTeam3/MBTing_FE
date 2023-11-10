@@ -1,40 +1,46 @@
 import React from 'react';
 import data from './questoinData.json'
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 
-function Answer1(){ 
+function Answer1({ onNextQuestion, currentIndex }) {
+    const [ans1, setAns1] = useState('');
 
-    const [ans1, setAns1] = useState(data[0].answers[0].content);
+    useEffect(() => {
+    setAns1(data[currentIndex].answers[0].content);
+    }, [currentIndex]);
+
+    const handleClick = () => {
+    onNextQuestion(data[currentIndex].option, data[currentIndex].answers[0].type);
+    };
 
     const answerStyle = {
-        borderRadius: "0.625rem",
-        paddingTop: "1.25rem",
-        paddingBottom:"1.25rem",
-        marginTop:"11.12rem",
-        marginLeft:"2.5rem",
-        marginRight:"2.5rem",
-        background: "linear-gradient(144deg, #FFF 0%, rgba(242, 242, 242, 0.80) 100%)",
-        boxShadow: "10px 10px 25px 0px #F5EEA7",
-        textAlign: "center",
-        color: "#000",
-        textAlign: "center",
-        fontFamily: 'GmarketSansMedium',
-        fontSize: "1.25rem",
-        fontStyle: "normal",
-        fontWeight: "500",
-        lineHeight: "normal",
+    borderRadius: '0.625rem',
+    paddingTop: '1.25rem',
+    paddingBottom: '1.25rem',
+    marginTop: '11.12rem',
+    marginLeft: '2.5rem',
+    marginRight: '2.5rem',
+    background: 'linear-gradient(144deg, #FFF 0%, rgba(242, 242, 242, 0.80) 100%)',
+    boxShadow: '10px 10px 25px 0px #F5EEA7',
+    textAlign: 'center',
+    color: '#000',
+    fontFamily: 'GmarketSansMedium',
+    fontSize: '1.25rem',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    lineHeight: 'normal',
     };
 
     const renderAnswer = () => {
-        const parts = ans1.split('\n');
-        return(parts);
-    }
+    const parts = ans1.split('\n');
+    return parts.map((part, index) => <div key={index}>{part}</div>);
+    };
 
-    return(
-        <div style={answerStyle} >
-            {renderAnswer()}
-        </div>
-    ); 
+    return (
+    <div style={answerStyle} onClick={handleClick}>
+        {renderAnswer()}
+    </div>
+    );
 }
 
-export default Answer1; 
+export default Answer1;

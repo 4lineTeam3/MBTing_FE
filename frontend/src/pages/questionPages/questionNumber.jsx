@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from './questoinData.json';
 
-function QuestionNumber() { 
+function QuestionNumber({currentIndex}) { 
     
-    const [num, setNum] = useState(data[0].id);
+    const [num, setNum] = useState(data[currentIndex].id);
+
+    useEffect(() => {
+        setNum(data[currentIndex].id);
+    }, [currentIndex]);
 
     const titleStyle= { 
         color: "#000",
