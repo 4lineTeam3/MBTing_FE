@@ -4,8 +4,11 @@ import QuestionNumber from '../questionPages/questionNumber';
 import Question from '../questionPages/question';
 import AnswerContainer from '../questionPages/answerContainer';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 
 function QuestionMain() {
+    const navigate = useNavigate();
 const backgroundStyle = {
     backgroundImage: `url(${questionBack})`,
     backgroundSize: 'cover',
@@ -56,16 +59,75 @@ const handleNextQuestion = (option, type) => {
 
 
     console.log('Final Result:', resultString);
+    switch(resultString){
+        case 'ENFJ':
+            navigate('/enfj');
+            break;
+        case 'ENFP':
+            navigate('/enfj');
+            break;
+        case 'ENTJ':
+            navigate('/enfj');
+            break;
+        case 'ENTP' :
+            navigate('/enfj');
+            break;
+        case 'ESFJ':
+            navigate('/enfj');
+            break;
+        case 'ESFP' :
+            navigate('/enfj');
+            break;
+        case 'ESTJ' :
+            navigate('/enfj');
+            break;
+
+        case 'ESTP' :
+            navigate('/enfj');
+            break;
+
+        case 'INFJ' :
+            navigate('/enfj');
+            break;
+
+        case 'INFP':
+            navigate('/enfj');
+            break;
+
+        case 'INTJ':
+            navigate('/enfj');
+            break;
+
+        case 'INTP' :
+            navigate('/enfj');
+            break;
+
+        case 'ISFJ' :
+            navigate('/enfj');
+            break;
+
+        case 'ISFP' :
+            navigate('/enfj');
+            break;
+
+        case 'ISTJ':
+            navigate('/enfj');
+            break;
+
+        case 'ISTP':
+            navigate('/enfj');
+            break;
+    }
     
-    axios.post('https://',{
-        resultString:resultString,
-    })
-    .then ((response) => {
+    // axios.post('https://',{
+    //     resultString:resultString,
+    // })
+    // .then ((response) => {
         
-    })
-    .catch((error) => {
-        console.error('error')
-    })
+    // })
+    // .catch((error) => {
+    //     console.error('error')
+    // })
 
     }
 };
