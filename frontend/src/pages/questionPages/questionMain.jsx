@@ -16,7 +16,7 @@ const backgroundStyle = {
     backgroundPosition: 'center center',
     width: '100vw',
     objectFit: 'cover',
-    height: 'auto',
+    height: '100vh',
 };
 
 const [index, setIndex] = useState(0);

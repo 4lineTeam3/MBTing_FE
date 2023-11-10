@@ -9,7 +9,8 @@ import ResultDetail from "../../components/result/ResultDetail";
 import Profilebtn from "../../components/result/Profilebtn"; 
 import FriendResult from "../../components/result/FriendResult";
 import SmallINFP from '../../img/MBTI/INFPsmall.png'; 
-import SmallISFP from '../../img/MBTI/ISFPsmall.png'; 
+import SmallISFP from '../../img/MBTI/ISFPsmall.png';
+import { Link } from 'react-router-dom'; 
 
 function PageENFJ(){ 
     const backgroundStyle = {
@@ -38,7 +39,7 @@ function PageENFJ(){
                 detail3="전형적인 학생회장 유형으로 리더를 자주 맡아요."
              />
              <FriendResult language={"javascript"} developerImg1={SmallINFP} developerImg2={SmallISFP}/>
-             <Profilebtn/>
+             <Link to="/matching"><Profilebtn/></Link>
         </div>
     ); 
 }
