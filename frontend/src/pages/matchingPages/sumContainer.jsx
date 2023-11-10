@@ -1,5 +1,8 @@
 import PictureContainer from "./pictureContainer";
 import { Link } from 'react-router-dom';
+import PersonContainer from './personContainer'
+import PersonContainer2 from './personContainer2'
+import PersonContainer3 from './personContainer3'
 
 function sumContainer(){
     const lineContainer={
@@ -58,9 +61,9 @@ function sumContainer(){
         </div>
 
         <div style={lineContainer}>
-            <PictureContainer/>
-            <PictureContainer/>
-            <PictureContainer/>
+            <PersonContainer/>
+            <PersonContainer2/>
+            <PersonContainer3/>
         </div>
 
         <div style={lineContainer}>
@@ -71,7 +74,7 @@ function sumContainer(){
 
         
     </div>
-    )
+    );
     
 }
 
