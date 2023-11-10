@@ -1,11 +1,22 @@
-// const { createProxyMiddleware } = require('http-proxy-middleware');
+// import { createProxyMiddleware } from 'http-proxy-middleware';
 
-// module.exports = function(app) {
+// export default function(app) {
 //     app.use(
-//         '/auth',
+//         '/auth/',
 //         createProxyMiddleware({
-//             target: 'http://127.0.0.1:8000',
+//             target: 'http://223.194.131.109:8000',
 //             changeOrigin: true,
 //         })
 //     );
 // };
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+module.exports = function(app) {
+    app.use(
+        '/auth/',
+        createProxyMiddleware({
+            target: 'http://192.168.0.41:8000',
+            changeOrigin: true,
+        })
+    );
+};

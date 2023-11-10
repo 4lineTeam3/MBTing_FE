@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios';
+import Api from '../../api';
 
 function LoginInput(){ 
     const [email, setEmail] = useState('');
@@ -13,20 +14,21 @@ function LoginInput(){
 
     const [data, setData] = useState('')
 
-    useEffect(() => {
-        axios.get('http://223.194.131.109:8000/auth/')
-            .then(response => setData(response.data))
-            .catch(error => console.log(error))
-    }, []);
+    // useEffect(() => {
+    //     axios.get('http://223.194.131.109:8000/auth/')
+    //         .then(response => setData(response.data))
+    //         .catch(error => console.log(error))
+    // }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(email);
+        console.log(password);
 
-        
-        axios.post('/auth/', {
+        Api.post('/auth/', {
             "email" : email,
             "password": password
-        })
+        }, { withCredentials: true })
         .then(response => {
             console.log('서버 응답:', response.data);
         })
