@@ -6,7 +6,9 @@ import AnswerContainer from '../questionPages/answerContainer';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
 function QuestionMain() {
+    const navigate = useNavigate();
 const backgroundStyle = {
     backgroundImage: `url(${questionBack})`,
     backgroundSize: 'cover',
