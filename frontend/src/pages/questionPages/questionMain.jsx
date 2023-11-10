@@ -13,7 +13,7 @@ const backgroundStyle = {
     backgroundPosition: 'center center',
     width: '100vw',
     objectFit: 'cover',
-    height: '100vh',
+    height: 'auto',
 };
 
 const [index, setIndex] = useState(0);
