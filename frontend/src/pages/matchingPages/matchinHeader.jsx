@@ -1,4 +1,5 @@
 import icon from '../../img/PersonIcon.png'
+import { Link } from 'react-router-dom';
 
 function MatchingHeader() {
     const backgroundStyle = {
@@ -40,7 +41,7 @@ function MatchingHeader() {
 
     return (
     <div style={backgroundStyle}>
-        <div style={iconStyle}><img src={icon} alt="뒤로가기" /></div>
+        <div style={iconStyle}><Link to='/SetProfile'><img src={icon} alt="뒤로가기" /></Link></div>
         <div style={logoStyle}>
             MBTing-<span style={heartStyle}>❥</span>
         </div>
@@ -49,3 +50,5 @@ function MatchingHeader() {
 }
 
 export default MatchingHeader;
+
+

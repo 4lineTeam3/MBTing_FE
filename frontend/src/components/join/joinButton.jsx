@@ -15,7 +15,6 @@ function JoinButton(){
         marginLeft:'0.88rem',
         marginTop:'0.2rem'
     }
-    
     const smallText = {
         color: '#3E3E3E',
         fontFamily:'GmarketSansTTF',
@@ -29,7 +28,6 @@ function JoinButton(){
         marginLeft:'1.2rem',
         marginBottom:'0.75rem'
     }
-
     const circleStyle={
         width: "1.25rem",
         height: "1.25rem",
@@ -37,7 +35,6 @@ function JoinButton(){
         background: "#fff",
         border: "2px solid #D9D9D9"
     }
-
     const smallCircleStyle={
         width: "0.9375rem",
         height: "0.9375rem",
@@ -46,7 +43,6 @@ function JoinButton(){
         border: "2px solid #D9D9D9",
         marginLeft:"0.25rem"
     }
-
     const line1Style={
         marginTop:"1.5rem",
         marginBottom:"2.13rem",
@@ -54,13 +50,11 @@ function JoinButton(){
         display:"flex",
         flexDirection: 'row'
     }
-
     const line1Style2={
         marginLeft:'5%',
         display:"flex",
         flexDirection: 'row'
     }
-
     const btnStyle={
         width: "23.125rem",
         height: "2.8125rem",
@@ -70,7 +64,7 @@ function JoinButton(){
         marginRight:"1.88rem",
         color: "#FFF",
         textAlign: "center",
-        fontFamily: "Gmarket Sans TTF",
+        fontFamily: "GmarketSansMedium",
         fontSize: "0.9375rem",
         fontStyle: "normal",
         fontWeight: "700",
@@ -79,35 +73,27 @@ function JoinButton(){
         borderColor:"#43AA70",
         background: "linear-gradient(266deg, #43AA70 -2.67%, #3C9764 100%)",
         boxShadow: "none",
-        marginBottom:"5rem"
+        marginBottom:"5rem", 
+        border:'none'
     }
-
     return(
         <div>
-
-
             <div style={line1Style}>
                 <input type="checkbox" style={circleStyle}></input><p style={emailText}>약관 전체 동의</p>
             </div>
-
             <div style={line1Style2}>
                 <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 본인은 만 14세 이상입니다.</p>
             </div>
-
             <div style={line1Style2}>
-            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 서비스 이용약관 동의</p>
+                <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 서비스 이용약관 동의</p>
             </div>
-
             <div style={line1Style2}>
-            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 개인정보 수집 및 이용 동의</p>
+                <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 개인정보 수집 및 이용 동의</p>
             </div>
-
             <div style={line1Style2}>
-            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(선택) 광고성 정보 수신 전체 동의</p>
+                <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(선택) 광고성 정보 수신 전체 동의</p>
             </div>
-
-            <Link to='/auth/'><button style={btnStyle}>동의하고 가입하기</button></Link>
-
+                <Link to='/Matching'><button style={btnStyle}>동의하고 가입하기</button></Link>
         </div>
     ); 
 }
