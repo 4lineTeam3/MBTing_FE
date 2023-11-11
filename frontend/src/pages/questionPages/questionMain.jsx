@@ -64,58 +64,58 @@ const handleNextQuestion = (option, type) => {
             navigate('/enfj');
             break;
         case 'ENFP':
-            navigate('/enfj');
+            navigate('/enfp');
             break;
         case 'ENTJ':
-            navigate('/enfj');
+            navigate('/entj');
             break;
         case 'ENTP' :
-            navigate('/enfj');
+            navigate('/entp');
             break;
         case 'ESFJ':
-            navigate('/enfj');
+            navigate('/esfj');
             break;
         case 'ESFP' :
-            navigate('/enfj');
+            navigate('/esfp');
             break;
         case 'ESTJ' :
-            navigate('/enfj');
+            navigate('/estj');
             break;
 
         case 'ESTP' :
-            navigate('/enfj');
+            navigate('/estp');
             break;
 
         case 'INFJ' :
-            navigate('/enfj');
+            navigate('/infj');
             break;
 
         case 'INFP':
-            navigate('/enfj');
+            navigate('/infp');
             break;
 
         case 'INTJ':
-            navigate('/enfj');
+            navigate('/intj');
             break;
 
         case 'INTP' :
-            navigate('/enfj');
+            navigate('/intp');
             break;
 
         case 'ISFJ' :
-            navigate('/enfj');
+            navigate('/isfj');
             break;
 
         case 'ISFP' :
-            navigate('/enfj');
+            navigate('/isfp');
             break;
 
         case 'ISTJ':
-            navigate('/enfj');
+            navigate('/istj');
             break;
 
         case 'ISTP':
-            navigate('/enfj');
+            navigate('/istp');
             break;
     }
     
