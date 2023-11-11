@@ -19,14 +19,8 @@ import PageISFJ from "./pages/MBTI/pageISFJ";
 import PageLogin from "./pages/Login/pageLogin"; 
 import PwReset from "./pages/Login/pwReset"; 
 import PageJoin from "./pages/Join/PageJoin"; 
-
-import QuestionMain from "./pages/questionPages/questionMain"; 
-import React,{useEffect, useState}  from 'react';
-
-import MatchingMain from './pages/matchingPages/matchingMain';
-import MorePage from './pages/matchingPages/morePage';
-import SetProfile from './pages/setProfilePages/setProfileMain';
-
+import ProfileDetail from "./pages/Profile/ProfileDetail"; 
+import React,{useEffect}  from 'react';
 import './style/App.css'; 
 
 function App() {
@@ -61,10 +55,7 @@ function App() {
         <Route path="/auth/" element={<PageLogin />} /> 
         <Route path="/pwReset" element={<PwReset />} /> 
         <Route path="/register/" element={<PageJoin />} /> 
-        <Route path="/Question" element={<QuestionMain/>} /> 
-      <Route path="/Matching" element={<MatchingMain/>} /> 
-      <Route path="/More" element={<MorePage/>} /> 
-      <Route path="/SetProfile" element={<SetProfile/>} />
+        <Route path="/profile-detail" element={<ProfileDetail />} /> 
       </Routes>
     </BrowserRouter>
   );
