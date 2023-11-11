@@ -10,8 +10,8 @@ function ResultTitle(){
         fontWeight: "700", 
         lineHeight: "normal", 
         paddingTop:"30%", 
-        marginLeft:"12%", 
-        marginRight:"12%"
+        marginLeft:"10%", 
+        marginRight:"10%"
     }; 
 
     return(
