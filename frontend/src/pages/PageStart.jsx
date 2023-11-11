@@ -26,7 +26,7 @@ function PageStart(){
         marginTop:'5%'
     }
     const btnBack = {
-        width: '24.6875rem', 
+        width: '20.6875rem', 
         height: '2.8125rem', 
         flexShrink: '0', 
         borderRadius: '0.625rem', 
@@ -34,7 +34,7 @@ function PageStart(){
         display:'flex', 
         justifyContent:'center', 
         margin:'0 auto', 
-        marginTop:'10%'
+        marginTop:'15%'
     };
 
     return(
