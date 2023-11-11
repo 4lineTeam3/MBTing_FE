@@ -12,7 +12,8 @@ function JoinButton(){
         display:'flex', 
         marginLeft:'6.5%', 
         fontWeight:'700',
-        marginLeft:'0.88rem'
+        marginLeft:'0.88rem',
+        marginTop:'0.2rem'
     }
     
     const smallText = {
@@ -86,23 +87,23 @@ function JoinButton(){
 
 
             <div style={line1Style}>
-                <div style={circleStyle}></div><p style={emailText}>약관 전체 동의</p>
+                <input type="checkbox" style={circleStyle}></input><p style={emailText}>약관 전체 동의</p>
             </div>
 
             <div style={line1Style2}>
-                <div style={smallCircleStyle}></div><p style={smallText}>(필수) 본인은 만 14세 이상입니다.</p>
+                <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 본인은 만 14세 이상입니다.</p>
             </div>
 
             <div style={line1Style2}>
-                <div style={smallCircleStyle}></div><p style={smallText}>(필수) 서비스 이용약관 동의</p>
+            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 서비스 이용약관 동의</p>
             </div>
 
             <div style={line1Style2}>
-                <div style={smallCircleStyle}></div><p style={smallText}>(필수) 개인정보 수집 및 이용 동의</p>
+            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(필수) 개인정보 수집 및 이용 동의</p>
             </div>
 
             <div style={line1Style2}>
-                <div style={smallCircleStyle}></div><p style={smallText}>(선택) 광고성 정보 수신 전체 동의</p>
+            <input type="checkbox" style={smallCircleStyle}></input><p style={smallText}>(선택) 광고성 정보 수신 전체 동의</p>
             </div>
 
             <Link to='/auth/'><button style={btnStyle}>동의하고 가입하기</button></Link>
