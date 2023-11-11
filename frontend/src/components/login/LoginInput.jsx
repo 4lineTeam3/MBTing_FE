@@ -85,15 +85,15 @@ function LoginInput() {
     }
 
     return (
-        <Link to="/Question/" style={{ textDecoration: 'none' }}>
-            <form method="post" onSubmit={handleSubmit}>
-                <div style={loginInputStyle}>
-                    <input style={inputStyle} placeholder="이메일 입력" value={email} onChange={handleEmailChange} required />
-                    <input style={inputStyle} placeholder="비밀번호 입력" value={password} onChange={handlePasswordChange} required />
-                </div>
+        <form method="post" onSubmit={handleSubmit}>
+            <div style={loginInputStyle}>
+                <input style={inputStyle} placeholder="이메일 입력" value={email} onChange={handleEmailChange} required />
+                <input style={inputStyle} placeholder="비밀번호 입력" value={password} onChange={handlePasswordChange} required />
+            </div>
+            <Link to="/Question/" style={{ textDecoration: 'none' }}>
                 <button type="submit" style={btnStyle}>로그인</button>
+            </Link>
             </form>
-        </Link>
     );
 }
 

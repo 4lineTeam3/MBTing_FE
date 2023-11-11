@@ -80,7 +80,7 @@ function SetProfileMain(){
             <HopePart/>
             <Add/>
             <OpenChat/>
-            <button style={btnStyle} onClick={handleSubmit}><Link to='/Matching' style={{ textDecoration: "none", color:'white'}}>프로필 보러 가기</Link></button>
+            <Link to='/Matching' style={{ textDecoration: "none", color:'white'}}><button style={btnStyle}>프로필 보러 가기</button></Link>
         </div>
     ); 
 }
