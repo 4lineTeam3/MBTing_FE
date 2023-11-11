@@ -20,7 +20,7 @@ function PageENFJ(){
         backgroundPosition: 'center center',
         width: '100vw',
         objectFit: 'cover',
-        height: '100vh'
+        height: '150vh'
     };
 
     return(
