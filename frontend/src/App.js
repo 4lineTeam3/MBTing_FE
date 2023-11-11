@@ -20,6 +20,10 @@ import PageLogin from "./pages/Login/pageLogin";
 import PwReset from "./pages/Login/pwReset"; 
 import PageJoin from "./pages/Join/PageJoin"; 
 import ProfileDetail from "./pages/Profile/ProfileDetail"; 
+import Question from "./pages/questionPages/questionMain";
+import SetProfile from "./pages/setProfilePages/setProfileMain";
+import More from "./pages/matchingPages/morePage";
+import Matching from "./pages/matchingPages/matchingMain";
 import React,{useEffect}  from 'react';
 import MatchingMain from "./pages/matchingPages/matchingMain"
 import './style/App.css'; 
@@ -58,6 +62,9 @@ function App() {
         <Route path="/register/" element={<PageJoin />} /> 
         <Route path="/Matching" element={ <MatchingMain/>} /> 
         <Route path="/profile-detail" element={<ProfileDetail />} /> 
+        <Route path="/question" element={<Question />} /> 
+        <Route path="/More" element={<More />} /> 
+        <Route path="/setProfile" element={<SetProfile />} /> 
       </Routes>
     </BrowserRouter>
   );

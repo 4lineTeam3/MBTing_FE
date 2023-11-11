@@ -47,7 +47,6 @@ function SetProfileMain(){
         objectFit: 'cover',
         height: 'AUTO'
     };
-
     const btnStyle={
         width: "24.2rem",
         height: "2.8125rem",
@@ -56,7 +55,7 @@ function SetProfileMain(){
         marginLeft:"5%",
         color: "#FFF",
         textAlign: "center",
-        fontFamily: "Gmarket Sans TTF",
+        fontFamily: "GmarketSansMedium",
         fontSize: "0.9375rem",
         fontStyle: "normal",
         fontWeight: "700",
@@ -65,7 +64,8 @@ function SetProfileMain(){
         borderColor:"#43AA70",
         background: "linear-gradient(266deg, #43AA70 -2.67%, #3C9764 100%)",
         boxShadow: "none",
-        marginBottom:"5rem"
+        marginBottom:"5rem", 
+        border:'none'
     }
 
 
@@ -80,7 +80,7 @@ function SetProfileMain(){
             <HopePart/>
             <Add/>
             <OpenChat/>
-            <Link to='/Matching'><button style={btnStyle} onClick={handleSubmit}>프로필 보러 가기</button></Link>
+            <button style={btnStyle} onClick={handleSubmit}><Link to='/Matching' style={{ textDecoration: "none", color:'white'}}>프로필 보러 가기</Link></button>
         </div>
     ); 
 }
