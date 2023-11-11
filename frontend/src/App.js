@@ -41,7 +41,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/start" element={<PageStart />} /> 
+        <Route path="/" element={<PageStart />} /> 
         <Route path="/result" element={<Result />} /> 
         <Route path="/entp" element={<PageENTP />} /> 
         <Route path="/enfp" element={<PageENFP />} /> 
