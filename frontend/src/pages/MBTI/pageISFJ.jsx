@@ -19,7 +19,7 @@ function PageISFJ(){
         backgroundPosition: 'center center',
         width: '100vw',
         objectFit: 'cover',
-        height: '120vh'
+        height: '150vh'
     };
 
     return(
