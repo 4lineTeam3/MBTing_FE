@@ -37,9 +37,9 @@ function PageENFJ(){
                 detail1="화합을 좋아해서 팀 분위기를 띄워주는 역할을 해요."
                 detail2="항상 행복을 추구하는 편이에요."
                 detail3="전형적인 학생회장 유형으로 리더를 자주 맡아요."
-             />
-             <FriendResult language={"javascript"} developerImg1={SmallINFP} developerImg2={SmallISFP}/>
-             <Link to="/matching"><Profilebtn/></Link>
+            />
+            <FriendResult language={"javascript"} developerImg1={SmallINFP} developerImg2={SmallISFP}/>
+            <Link to="/SetProfile"><Profilebtn/></Link>
         </div>
     ); 
 }

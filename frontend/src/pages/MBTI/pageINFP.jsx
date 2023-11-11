@@ -10,7 +10,7 @@ import Profilebtn from "../../components/result/Profilebtn";
 import FriendResult from "../../components/result/FriendResult";
 import SmallENFJ from '../../img/MBTI/ENFJsmall.png'; 
 import SmallENTJ from '../../img/MBTI/ENTJsmall.png'; 
-
+import { Link } from 'react-router-dom';
 function PageINFP(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -36,9 +36,9 @@ function PageINFP(){
                 detail1="자신의 가치관에만 부합하면 보상이 없어도 실천하는 유형이에요."
                 detail2="규칙? 말만 들어도 숨이 막혀요!"
                 detail3="타인의 감정을 잘 캐치해요."
-             />
-             <FriendResult language={"C언어, C++"} developerImg1={SmallENFJ} developerImg2={SmallENTJ}/>
-             <Profilebtn/>
+            />
+            <FriendResult language={"C언어, C++"} developerImg1={SmallENFJ} developerImg2={SmallENTJ}/>
+            <Link to="/SetProfile"><Profilebtn/></Link>
         </div>
     ); 
 }

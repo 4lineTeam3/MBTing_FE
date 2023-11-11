@@ -10,7 +10,7 @@ import Profilebtn from "../../components/result/Profilebtn";
 import FriendResult from "../../components/result/FriendResult";
 import SmallENFP from '../../img/MBTI/ENFPsmall.png'; 
 import SmallENTP from '../../img/MBTI/ENTPsmall.png'; 
-
+import { Link } from 'react-router-dom';
 function PageINFJ(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -36,9 +36,9 @@ function PageINFJ(){
                 detail1="통찰력이 아주 깊어요!"
                 detail2="사회생활이 피곤해 가끔 팀 개발이 부담돼요."
                 detail3="주변에서 엉뚱하다는 말을 듣곤 해요."
-             />
-             <FriendResult language={"python, java"} developerImg1={SmallENFP} developerImg2={SmallENTP}/>
-             <Profilebtn/>
+            />
+            <FriendResult language={"python, java"} developerImg1={SmallENFP} developerImg2={SmallENTP}/>
+            <Link to="/SetProfile"><Profilebtn/></Link>
         </div>
     ); 
 }

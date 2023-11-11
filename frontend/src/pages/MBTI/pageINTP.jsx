@@ -10,7 +10,7 @@ import Profilebtn from "../../components/result/Profilebtn";
 import FriendResult from "../../components/result/FriendResult";
 import SmallESTJ from '../../img/MBTI/ESTJsmall.png'; 
 import SmallENTJ from '../../img/MBTI/ENTJsmall.png'; 
-
+import { Link } from 'react-router-dom';
 function PageINTP(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -36,9 +36,9 @@ function PageINTP(){
                 detail1="비효율적인 일을 싫어해요."
                 detail2="반복적인 일상을 선호하지 않아요."
                 detail3="토론의 정답을 찾을 때 정말 뿌듯해요."
-             />
-             <FriendResult language={"python, java"} developerImg1={SmallESTJ} developerImg2={SmallENTJ}/>
-             <Profilebtn/>
+            />
+            <FriendResult language={"python, java"} developerImg1={SmallESTJ} developerImg2={SmallENTJ}/>
+            <Link to="/SetProfile"><Profilebtn/></Link>
         </div>
     ); 
 }

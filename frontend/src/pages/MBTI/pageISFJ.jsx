@@ -10,7 +10,7 @@ import Profilebtn from "../../components/result/Profilebtn";
 import FriendResult from "../../components/result/FriendResult";
 import SmallESTP from '../../img/MBTI/ESTPsmall.png'; 
 import SmallESFP from '../../img/MBTI/ESFPsmall.png'; 
-
+import { Link } from 'react-router-dom';
 function PageISFJ(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -36,9 +36,9 @@ function PageISFJ(){
                 detail1="성실하고 온화하며 협조를 잘해요."
                 detail2="사람과 가까워지는 데 오래 걸려 낯선 팀원을 만나면 초반에 힘들어하는 편이에요."
                 detail3="생각이 흘러넘치는 편!"
-             />
-             <FriendResult language={"C언어"} developerImg1={SmallESTP} developerImg2={SmallESFP}/>
-             <Profilebtn/>
+            />
+            <FriendResult language={"C언어"} developerImg1={SmallESTP} developerImg2={SmallESFP}/>
+            <Link to="/SetProfile"><Profilebtn/></Link>
         </div>
     ); 
 }
