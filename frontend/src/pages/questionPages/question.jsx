@@ -13,7 +13,7 @@ const questionStyle = {
     color: '#00451E',
     textAlign: 'center',
     fontFamily: 'GmarketSansMedium',
-    fontSize: '1.875rem',
+    fontSize: '1.575rem',
     fontStyle: 'normal',
     fontWeight: '800',
     lineHeight: 'normal',
