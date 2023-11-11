@@ -21,12 +21,14 @@ function ProfileBtn(){
         lineHeight: 'normal', 
         color: '#FFF', 
         border:'none', 
-        background:'none'
+        background:'none', 
+        marginTop:'5%'
     }
 
     return(
         <div style={backgroundStyle}>
-            <button style={btn}>오픈채팅 링크로 연결하기</button>
+            <a href="https://open.kakao.com/o/sSO8x4Mf" target="_blank" rel="noopener noreferrer">
+            <button style={btn}>오픈채팅 링크로 연결하기</button></a>
         </div>
     ); 
 }
