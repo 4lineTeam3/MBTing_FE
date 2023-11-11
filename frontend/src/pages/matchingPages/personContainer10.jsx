@@ -68,12 +68,14 @@ function PersonContainer(){
 
     return (
         <div style={containerStyle}>
-            {/* Link 컴포넌트로 이미지 감싸기 */}
+            <Link to="/profile-detail">
                 <img
                     src={picture}
                     alt="Person"
                     style={imgStyle}
                 />
+            </Link>
+
             <div style={personExStyle}>
                 <div style={explain}>
                     <div style={line1}>
