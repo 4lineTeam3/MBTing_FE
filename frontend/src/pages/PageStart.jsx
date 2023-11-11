@@ -68,9 +68,6 @@ function PageStart(){
                     <button style={btn}>검사시작</button>
                 </Link>
             </div>
-            <div style={btnBack2}>
-                <button style={btn2}>카카오톡 공유하기</button>
-            </div>
         </div>
     ); 
 }

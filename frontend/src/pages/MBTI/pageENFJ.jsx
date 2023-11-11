@@ -10,6 +10,7 @@ import Profilebtn from "../../components/result/Profilebtn";
 import FriendResult from "../../components/result/FriendResult";
 import SmallINFP from '../../img/MBTI/INFPsmall.png'; 
 import SmallISFP from '../../img/MBTI/ISFPsmall.png';
+import ShareBtn from '../../components/ShareBtn';
 import { Link } from 'react-router-dom'; 
 
 function PageENFJ(){ 
@@ -40,6 +41,7 @@ function PageENFJ(){
             />
             <FriendResult language={"javascript"} developerImg1={SmallINFP} developerImg2={SmallISFP}/>
             {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
+            <ShareBtn/>
         </div>
     ); 
 }
