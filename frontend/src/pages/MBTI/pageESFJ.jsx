@@ -11,7 +11,6 @@ import FriendResult from "../../components/result/FriendResult";
 import SmallISTP from '../../img/MBTI/ISTPsmall.png'; 
 import SmallINTP from '../../img/MBTI/INTPsmall.png'; 
 import { Link } from 'react-router-dom';
-import ShareBtn from '../../components/ShareBtn';
 function PageESFJ(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -40,7 +39,6 @@ function PageESFJ(){
             />
             <FriendResult language={"java, katlin"} developerImg1={SmallISTP} developerImg2={SmallINTP}/>
             {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
-            <ShareBtn/>
         </div>
     ); 
 }

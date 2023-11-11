@@ -11,7 +11,6 @@ import FriendResult from "../../components/result/FriendResult";
 import SmallINTP from '../../img/MBTI/INTPsmall.png'; 
 import SmallINFP from '../../img/MBTI/INFPsmall.png'; 
 import { Link } from 'react-router-dom';
-import ShareBtn from '../../components/ShareBtn';
 function PageENTJ(){ 
     const backgroundStyle = {
         backgroundImage: `url(${resultBack})`,
@@ -40,7 +39,6 @@ function PageENTJ(){
             />
             <FriendResult language={"java, C언어, python"} developerImg1={SmallINTP} developerImg2={SmallINFP}/>
             {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
-            <ShareBtn/>
         </div>
     ); 
 }

@@ -23,7 +23,7 @@ function PageStart(){
         color: '#FFF', 
         border:'none', 
         background:'none', 
-        marginTop:'8%'
+        marginTop:'5%'
     }
     const btnBack = {
         width: '20.6875rem', 
@@ -35,29 +35,6 @@ function PageStart(){
         justifyContent:'center', 
         margin:'0 auto', 
         marginTop:'15%'
-    };
-    const btn2 = { 
-        textAlign: 'center', 
-        fontFamily: 'GmarketSansMedium',
-        fontSize: '1.5rem', 
-        fontStyle: 'normal', 
-        fontWeight: '700', 
-        lineHeight: 'normal', 
-        color: '#FFF', 
-        border:'none', 
-        background:'none', 
-        marginTop:'3%'
-    }
-    const btnBack2 = {
-        width: '20.6875rem', 
-        height: '2.8125rem', 
-        flexShrink: '0', 
-        borderRadius: '0.625rem', 
-        background:' #42A86F', 
-        display:'flex', 
-        justifyContent:'center', 
-        margin:'0 auto', 
-        marginTop:'5%'
     };
 
     return(

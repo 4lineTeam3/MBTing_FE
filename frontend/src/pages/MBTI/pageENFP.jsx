@@ -9,8 +9,7 @@ import ResultDetail from "../../components/result/ResultDetail";
 import Profilebtn from "../../components/result/Profilebtn"; 
 import FriendResult from "../../components/result/FriendResult";
 import SmallINFJ from '../../img/MBTI/INFJsmall.png'; 
-import SmallINTJ from '../../img/MBTI/INTJsmall.png';
-import ShareBtn from '../../components/ShareBtn'; 
+import SmallINTJ from '../../img/MBTI/INTJsmall.png'; 
 import { Link } from 'react-router-dom';
 
 function PageENTP(){ 
@@ -41,7 +40,6 @@ function PageENTP(){
             />
             <FriendResult language={"python"} developerImg1={SmallINTJ} developerImg2={SmallINFJ}/>
             {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
-            <ShareBtn/>
         </div>
     ); 
 }
