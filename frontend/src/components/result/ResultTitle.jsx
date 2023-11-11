@@ -9,9 +9,9 @@ function ResultTitle(){
         fontStyle: "normal", 
         fontWeight: "700", 
         lineHeight: "normal", 
-        paddingTop:"20%", 
-        marginLeft:"16%", 
-        marginRight:"16%"
+        paddingTop:"30%", 
+        marginLeft:"10%", 
+        marginRight:"10%"
     }; 
 
     return(
