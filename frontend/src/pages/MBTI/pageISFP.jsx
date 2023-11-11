@@ -38,7 +38,7 @@ function PageISFP(){
                 detail3="나에게 프로젝트 발표를 맡기지 마세요!"
             />
             <FriendResult language={"python"} developerImg1={SmallESFJ} developerImg2={SmallENFJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

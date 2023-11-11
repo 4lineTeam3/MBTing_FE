@@ -38,7 +38,7 @@ function PageINTJ(){
                 detail3="뭐든 갑작스러운 게 싫은 당신에게 ‘일단 해보자’라는 말은 금지!"
             />
             <FriendResult language={"python"} developerImg1={SmallENFP} developerImg2={SmallENTP}/>
-            <Profilebtn/>
+            {/* <Profilebtn/> */}
         </div>
     ); 
 }

@@ -38,7 +38,7 @@ function PageESFP(){
                 detail3="친화력이 매우 높아 팀원들과 금방 친해져요."
             />
             <FriendResult language={"C++, C#"} developerImg1={SmallISFJ} developerImg2={SmallISTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

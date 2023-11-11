@@ -39,7 +39,7 @@ function PageENTP(){
                 detail3="트렌드에 민감해 아이디어가 샘솟아요."
             />
             <FriendResult language={"python"} developerImg1={SmallINTJ} developerImg2={SmallINFJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

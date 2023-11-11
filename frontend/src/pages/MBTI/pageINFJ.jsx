@@ -38,7 +38,7 @@ function PageINFJ(){
                 detail3="주변에서 엉뚱하다는 말을 듣곤 해요."
             />
             <FriendResult language={"python, java"} developerImg1={SmallENFP} developerImg2={SmallENTP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

@@ -38,7 +38,7 @@ function PageESTP(){
                 detail3="관찰력이 좋아 상황에 대한 분석에 능해요"
             />
             <FriendResult language={"java, C언어"} developerImg1={SmallISFJ} developerImg2={SmallISTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

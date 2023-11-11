@@ -38,7 +38,7 @@ function PageENTP(){
                 detail3="주관이 뚜렷해 팀원들을 잘 이끌어요."
             />
             <FriendResult language={"swift"} developerImg1={SmallINFJ} developerImg2={SmallINTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

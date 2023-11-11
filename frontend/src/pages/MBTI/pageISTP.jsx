@@ -38,7 +38,7 @@ function PageISTP(){
                 detail3="일 센스가 좋은 만능 재주꾼이에요."
             />
             <FriendResult language={"C언어, C++"} developerImg1={SmallESFJ} developerImg2={SmallESTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

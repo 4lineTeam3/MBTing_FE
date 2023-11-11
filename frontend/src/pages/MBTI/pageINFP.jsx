@@ -38,7 +38,7 @@ function PageINFP(){
                 detail3="타인의 감정을 잘 캐치해요."
             />
             <FriendResult language={"C언어, C++"} developerImg1={SmallENFJ} developerImg2={SmallENTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

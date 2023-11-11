@@ -38,7 +38,7 @@ function PageESTJ(){
                 detail3="계획이 흐트러지는 것도 정말 싫어해요."
             />
             <FriendResult language={"java, C언어"} developerImg1={SmallISFP} developerImg2={SmallISTP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

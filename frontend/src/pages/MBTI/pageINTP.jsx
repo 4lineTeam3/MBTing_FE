@@ -38,7 +38,7 @@ function PageINTP(){
                 detail3="토론의 정답을 찾을 때 정말 뿌듯해요."
             />
             <FriendResult language={"python, java"} developerImg1={SmallESTJ} developerImg2={SmallENTJ}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

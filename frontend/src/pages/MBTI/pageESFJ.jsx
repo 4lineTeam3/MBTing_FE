@@ -38,7 +38,7 @@ function PageESFJ(){
                 detail3="중재자 역할을 잘해 집단관계에 큰 도움이 돼요."
             />
             <FriendResult language={"java, katlin"} developerImg1={SmallISTP} developerImg2={SmallINTP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

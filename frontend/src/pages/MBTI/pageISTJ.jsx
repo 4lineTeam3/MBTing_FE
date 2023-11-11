@@ -38,7 +38,7 @@ function PageISTJ(){
                 detail3="속마음을 잘 드러내지 않아요."
             />
             <FriendResult language={"javascript"} developerImg1={SmallESFP} developerImg2={SmallESTP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

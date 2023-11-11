@@ -39,7 +39,7 @@ function PageENFJ(){
                 detail3="전형적인 학생회장 유형으로 리더를 자주 맡아요."
             />
             <FriendResult language={"javascript"} developerImg1={SmallINFP} developerImg2={SmallISFP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

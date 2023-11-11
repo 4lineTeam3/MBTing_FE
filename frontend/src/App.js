@@ -26,6 +26,7 @@ import More from "./pages/matchingPages/morePage";
 import Matching from "./pages/matchingPages/matchingMain";
 import React,{useEffect}  from 'react';
 import MatchingMain from "./pages/matchingPages/matchingMain"
+import PageStart from "./pages/PageStart" ;
 import './style/App.css'; 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/start" element={<PageStart />} /> 
         <Route path="/result" element={<Result />} /> 
         <Route path="/entp" element={<PageENTP />} /> 
         <Route path="/enfp" element={<PageENFP />} /> 

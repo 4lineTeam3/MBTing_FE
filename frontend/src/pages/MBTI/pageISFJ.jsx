@@ -38,7 +38,7 @@ function PageISFJ(){
                 detail3="생각이 흘러넘치는 편!"
             />
             <FriendResult language={"C언어"} developerImg1={SmallESTP} developerImg2={SmallESFP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }

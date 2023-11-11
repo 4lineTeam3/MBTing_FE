@@ -34,9 +34,9 @@ function Result(){
                 detail1="직설적이고 솔직한 피드백을 해요."
                 detail2="상상력이 풍부해서 개발에 큰 도움을 줘요."
                 detail3="주관이 뚜렷해 팀원들을 잘 이끌어요."
-             />
-             <FriendResult/>
-             <Profilebtn/>
+            />
+            <FriendResult/>
+            <Profilebtn/>
         </div>
     ); 
 }

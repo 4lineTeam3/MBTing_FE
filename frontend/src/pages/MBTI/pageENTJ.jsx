@@ -38,7 +38,7 @@ function PageENTJ(){
                 detail3="체계적인 성격으로 꼼꼼한 계획을 세워요."
             />
             <FriendResult language={"java, C언어, python"} developerImg1={SmallINTP} developerImg2={SmallINFP}/>
-            <Link to="/SetProfile"><Profilebtn/></Link>
+            {/* <Link to="/SetProfile"><Profilebtn/></Link> */}
         </div>
     ); 
 }
