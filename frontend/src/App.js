@@ -19,6 +19,7 @@ import PageISFJ from "./pages/MBTI/pageISFJ";
 import PageLogin from "./pages/Login/pageLogin"; 
 import PwReset from "./pages/Login/pwReset"; 
 import PageJoin from "./pages/Join/PageJoin"; 
+import ProfileDetail from "./pages/Profile/ProfileDetail"; 
 import React,{useEffect}  from 'react';
 import './style/App.css'; 
 
@@ -54,6 +55,7 @@ function App() {
         <Route path="/auth/" element={<PageLogin />} /> 
         <Route path="/pwReset" element={<PwReset />} /> 
         <Route path="/register/" element={<PageJoin />} /> 
+        <Route path="/profile-detail" element={<ProfileDetail />} /> 
       </Routes>
     </BrowserRouter>
   );
