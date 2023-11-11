@@ -16,7 +16,7 @@ function ResultTitle(){
 
     return(
         <div style={titleStyle}>
-            짱구로 알아보는 나의 개발 유형은?
+            짱구로 알아보는<br/> 나의 개발 유형은?
         </div>
     ); 
 }
